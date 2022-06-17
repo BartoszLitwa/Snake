@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Save Your Score">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER">
+         <children>
+            <Label fx:id="lbScore" alignment="TOP_LEFT" text="SCORE: ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbTime" alignment="TOP_LEFT" text="TIME: ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbAppleScore" alignment="CENTER" text="POINTS: " textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbApple2Score" alignment="CENTER" text="SHORT POINTS: " textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbSnakeLength" alignment="CENTER" text="SNAKE LENGTH: " textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <VBox spacing="25.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label alignment="TOP_LEFT" text="Name: ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfName" promptText="name" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnSave" mnemonicParsing="false" text="Save this score" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+
+   </children>
+</VBox>

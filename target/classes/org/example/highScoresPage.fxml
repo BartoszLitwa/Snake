@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.HighScoresController">
+    <children>
+      <HBox spacing="50.0">
+         <children>
+            <Button fx:id="btnGoBack" alignment="CENTER" mnemonicParsing="false" text="GO BACK" textAlignment="CENTER" />
+              <Label text="High Scores">
+               <font>
+                  <Font size="40.0" />
+               </font>
+              </Label>
+         </children>
+      </HBox>
+      <TableView  fx:id="highScoresTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="colName" text="NAME" />
+          <TableColumn fx:id="colScore" text="SCORE" />
+            <TableColumn fx:id="colTime" text="TIME" />
+            <TableColumn fx:id="colLength" text="SNAKE LENGTH" />
+            <TableColumn fx:id="colBoard" text="BOARD SIZE" />
+            <TableColumn fx:id="colPoints"  text="POINTS" />
+            <TableColumn fx:id="colShortPoints"  text="SHORT POINTS" />
+        </columns>
+      </TableView>
+
+    </children>
+</VBox>
