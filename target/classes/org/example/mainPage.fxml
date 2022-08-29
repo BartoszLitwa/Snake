@@ -18,7 +18,7 @@
             <Image url="@../../images/head_down.png" />
          </image>
       </ImageView>
-      <Label text="by Bartosz Litwa s24784">
+      <Label text="by Bartosz Litwa">
          <font>
             <Font size="18.0" />
          </font>
